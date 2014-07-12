@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6468767C196FBE5500C17E95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6468767B196FBE5500C17E95 /* MapKit.framework */; };
+		6468767F196FBFA500C17E95 /* TableCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468767E196FBFA500C17E95 /* TableCustomTableViewController.m */; };
 		64A9759C196E31ED001CD31C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A9759B196E31ED001CD31C /* main.m */; };
 		64A9759F196E31ED001CD31C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A9759E196E31ED001CD31C /* AppDelegate.m */; };
 		64A975A2196E31ED001CD31C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A975A1196E31ED001CD31C /* ViewController.m */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6468767B196FBE5500C17E95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6468767D196FBFA500C17E95 /* TableCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCustomTableViewController.h; sourceTree = "<group>"; };
+		6468767E196FBFA500C17E95 /* TableCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCustomTableViewController.m; sourceTree = "<group>"; };
 		64A97596196E31ED001CD31C /* xcodetest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcodetest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A9759A196E31ED001CD31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A9759B196E31ED001CD31C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6468767C196FBE5500C17E95 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,7 @@
 		64A9758D196E31ED001CD31C = {
 			isa = PBXGroup;
 			children = (
+				6468767B196FBE5500C17E95 /* MapKit.framework */,
 				64A97598196E31ED001CD31C /* xcodetest2 */,
 				64A975AF196E31ED001CD31C /* xcodetest2Tests */,
 				64A97597196E31ED001CD31C /* Products */,
@@ -86,6 +93,8 @@
 				64A975A3196E31ED001CD31C /* Main.storyboard */,
 				64A975A6196E31ED001CD31C /* Images.xcassets */,
 				64A97599196E31ED001CD31C /* Supporting Files */,
+				6468767D196FBFA500C17E95 /* TableCustomTableViewController.h */,
+				6468767E196FBFA500C17E95 /* TableCustomTableViewController.m */,
 			);
 			path = xcodetest2;
 			sourceTree = "<group>";
@@ -165,6 +174,12 @@
 				TargetAttributes = {
 					64A97595196E31ED001CD31C = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = GX6UTM4UNL;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					64A975AB196E31ED001CD31C = {
 						CreatedOnToolsVersion = 6.0;
@@ -217,6 +232,7 @@
 			files = (
 				64A975A2196E31ED001CD31C /* ViewController.m in Sources */,
 				64A9759F196E31ED001CD31C /* AppDelegate.m in Sources */,
+				6468767F196FBFA500C17E95 /* TableCustomTableViewController.m in Sources */,
 				64A9759C196E31ED001CD31C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,7 +350,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = xcodetest2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -345,7 +363,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = xcodetest2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -406,6 +426,7 @@
 				64A975B8196E31ED001CD31C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64A975B9196E31ED001CD31C /* Build configuration list for PBXNativeTarget "xcodetest2Tests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +435,7 @@
 				64A975BB196E31ED001CD31C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
